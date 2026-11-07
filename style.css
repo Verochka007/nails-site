@@ -1,0 +1,480 @@
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    scroll-behavior: smooth; /* плавная прокрутка (Chrome, Firefox) */
+  }
+  
+  body {
+    background: #ffffff;
+    font-family: 'Ledger', Georgia, serif;
+  }
+  
+  /* Страница 1280 x 6005, цвет FF8AB5, прозрачность 6% */
+  .page {
+    position: relative;
+    width: 1280px;
+    height: 6005px;
+    margin: 0 auto;
+    background: rgba(255, 138, 181, 0.06);
+    overflow: hidden;
+    padding-top: 40px;
+  }
+  
+  /* Белые плашки 1100 x 100 */
+  .bar {
+    width: 1100px;
+    height: 100px;
+    margin: 0 auto;
+    background: #ffffff;
+    border-radius: 50px;
+  }
+  
+  .card {
+    background: #ffffff;
+    border-radius: 25px;
+    color: #B9236A;
+  }
+  
+  /* ---------- Шапка ---------- */
+  .header {
+    position: relative;
+  }
+  
+  .logo {
+    position: absolute;
+    left: 40px;
+    top: 0;
+    line-height: 100px;
+    font-size: 60px;
+    color: rgba(255, 71, 159, 0.49);
+    white-space: nowrap;
+  }
+  
+  .menu {
+    position: absolute;
+    right: 25px;
+    top: 28px;
+    width: 490px;
+    height: 45px;
+    background: #F0E9EC;
+    border-radius: 23px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  
+  .menu a {
+    font-size: 25px;
+    color: #545454;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  
+  .menu a:hover {
+    color: #B9236A;
+  }
+  
+  /* ---------- Главный блок ---------- */
+  .hero {
+    width: 1100px;
+    margin: 70px auto 0;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+  }
+  
+  .hero-text {
+    width: 600px;
+    height: 510px;
+    padding: 25px 30px;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  .hero-text h1 {
+    font-size: 35px;
+    font-weight: normal;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+  
+  .hero-text p {
+    font-size: 25px;
+    line-height: 1.3;
+  }
+  
+  .hero-photos img {
+    display: block;
+    width: 380px;
+    height: 235px;
+    border-radius: 20px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    background: #F0E9EC;
+  }
+  
+  .hero-photos img + img {
+    margin-top: 40px;
+  }
+  
+  /* ---------- Заголовки разделов ---------- */
+  .section-title {
+    margin-top: 110px;
+    padding-left: 40px;
+    font-size: 60px;
+    font-weight: normal;
+    line-height: 100px;
+    color: #545454; /* цвет текста меню */
+  }
+  
+  /* ---------- Услуги ---------- */
+  .services {
+    width: 1100px;
+    margin: 50px auto 0;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+    padding: 0 20px;
+  }
+  
+  .services-photos img {
+    display: block;
+    border-radius: 20px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    background: #F0E9EC;
+  }
+  
+  .s-photo1 {
+    width: 350px;
+    height: 510px;
+  }
+  
+  .s-photo2 {
+    width: 350px;
+    height: 250px;
+    margin-top: 110px;
+  }
+  
+  .services-text {
+    width: 700px;
+    height: 870px;
+    padding: 30px 35px;
+    overflow: hidden;
+  }
+  
+  .services-text p {
+    font-size: 25px;
+    line-height: 1.25;
+    margin-bottom: 22px;
+  }
+  
+  .services-text b {
+    font-family: 'Manrope', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    letter-spacing: 5px;
+  }
+  
+  /* ---------- Наши работы ---------- */
+  .works {
+    width: 1100px;
+    margin: 50px auto 0;
+    padding: 0 50px;
+  }
+  
+  .work-row {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-align-items: center;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+  
+  .work-row img {
+    display: block;
+    width: 550px;
+    height: 550px;
+    border-radius: 20px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    background: #F0E9EC;
+  }
+  
+  .work-card {
+    width: 450px;
+    height: 300px;
+    padding: 25px;
+    background: #ffffff;
+    border-radius: 20px;
+    color: #B9236A;
+    font-size: 30px;
+    line-height: 1.25;
+    text-align: center;
+    overflow: hidden;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;  
+  justify-content: center;
+  }
+  
+  /* ---------- Прайс ---------- */
+  .price {
+    width: 1100px;
+    margin: 50px auto 0;
+    padding: 35px 45px;
+  }
+  
+  .price h3 {
+    font-family: 'Manrope', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+    margin-top: 25px;
+  }
+  
+  .price h3:first-child {
+    margin-top: 0;
+  }
+  
+  .price p {
+    font-size: 25px;
+    line-height: 1.3;
+  }
+  
+  .price .note {
+    margin-top: 30px;
+  }
+  
+  /* ---------- Контакты 1100 x 500 ---------- */
+  .contacts {
+    width: 1100px;
+    height: 500px;
+    margin: 110px auto 0;
+    padding: 40px 45px;
+    background: #FFF6F9;
+    border-radius: 50px;
+    color: #545454;
+    overflow: hidden;
+  }
+  
+  .contacts h2 {
+    font-size: 50px;
+    font-weight: normal;
+    margin-bottom: 25px;
+  }
+  
+  .contacts p {
+    font-size: 30px;
+    line-height: 1.35;
+    margin-bottom: 25px;
+  }
+  
+  /* ---------- Подвал 1200 x 50 ---------- */
+  .footer {
+    position: absolute;
+    left: 40px;
+    bottom: 40px;
+    width: 1200px;
+    height: 50px;
+    background: #ffffff;
+    border-radius: 12px;
+    font-size: 30px;
+    line-height: 50px;
+    text-align: center;
+    color: #545454;
+  }
+@media (max-width: 800px) {
+
+    .page {
+      width: 100%;
+      height: auto;
+      padding: 20px 0 30px;
+    }
+  
+    /* белые плашки */
+    .bar {
+      width: 92%;
+      height: auto;
+      border-radius: 35px;
+    }
+  
+    /* шапка: название сверху, меню под ним */
+    .header {
+      padding: 18px 15px;
+      text-align: center;
+    }
+    .logo {
+      position: static;
+      line-height: 1.2;
+      font-size: 38px;
+      white-space: normal;
+    }
+    .menu {
+      position: static;
+      width: 100%;
+      height: auto;
+      margin-top: 14px;
+      padding: 10px 6px;
+      border-radius: 25px;
+      -webkit-flex-wrap: wrap;
+      flex-wrap: wrap;
+    }
+    .menu a {
+      font-size: 18px;
+      margin: 3px 6px;
+    }
+  
+    /* главный блок */
+    .hero {
+      width: 92%;
+      margin-top: 30px;
+      -webkit-flex-direction: column;
+      flex-direction: column;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+    .hero-text {
+      width: 100%;
+      height: auto;
+      padding: 22px 18px;
+    }
+    .hero-text h1 { font-size: 26px; }
+    .hero-text p  { font-size: 18px; }
+    .hero-photos {
+     display: -webkit-flex;
+     display: flex;
+    }
+    .hero-photos img {
+      width: 48%;
+      height: 180px;
+      -o-object-fit: cover;
+      object-fit: cover
+    }
+    .hero-photos img + img { margin-top: 20px; }
+  
+    /* заголовки разделов */
+    .section-title {
+      display: -webkit_flex;
+      display: flex;
+      -webkit-align-items: center;
+      align-items: center;
+      margin-top: 50px;
+      padding: 0 0 0 25px;
+      font-size: 30px;
+      line-heinght: 1.1;
+      height: 70px
+    }
+  
+    /* услуги */
+    .services {
+      width: 92%;
+      padding: 0;
+      margin-top: 25px;
+      -webkit-flex-direction: column;
+      flex-direction: column;
+    }
+    .services-photos { 
+      display: contents;
+    }
+    .s-photo1 {
+      -webkit-order: 1;
+      order: 1;
+    }
+    .services-text {
+    -webkit-order: 2;
+  order: 2;}
+    .s-photo2 {
+      -webkit-order: 3;
+      order: 3;
+      margin-top: 20px;
+    }
+    .services-text {
+      width: 100%;
+      height: auto;
+      margin-top: 20px;
+      padding: 22px 18px;
+    }
+    .services-text p {
+      font-size: 18px;
+      line-height: 1.25;
+      margin-bottom: 18px;
+    }
+    .services-text b {
+      font-size: 20px;
+      letter-spacing: 2px;
+    }
+    /* наши работы */
+    .works {
+      width: 92%;
+      padding: 0;
+      margin-top: 25px;
+    }
+    .work-row {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+      margin-bottom: 30px;
+    }
+    .work-row img {
+      -webkit-order: 1;
+      order: 1;
+      width: 100%;
+      height: auto;
+    }
+    .work-card {
+      -webkit-order: 2;
+      order: 2;
+      width: 100%;
+      height: auto;
+      margin-top: 15px;
+      padding: 22px 18px;
+      font-size: 20px;
+    }
+  
+    /* прайс */
+    .price {
+      width: 92%;
+      margin-top: 25px;
+      padding: 22px 18px;
+    }
+    .price h3 { font-size: 24px; }
+    .price p  { font-size: 18px; }
+  
+    /* контакты */
+    .contacts {
+      width: 92%;
+      height: auto;
+      margin-top: 50px;
+      padding: 28px 20px;
+      border-radius: 35px;
+    }
+    .contacts h2 { font-size: 34px; }
+    .contacts p  { font-size: 19px; }
+  
+    /* подвал */
+    .footer {
+      position: static;
+      width: 92%;
+      height: auto;
+      margin: 40px auto 0;
+      padding: 12px 10px;
+      font-size: 16px;
+      line-height: 1.4;
+    }
